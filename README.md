@@ -10,15 +10,34 @@ This project contains structured prompt templates that enable consistent, rubric
 
 | File | Description |
 |------|-------------|
-| `template.md` | Generic validation template applicable to any certification or product module |
-| `sc.md` | Zendesk Solution Consultant certification template (Support Suite + AI Agents Essentials) |
+| `template.md` | Generic validation template — use this as a starting point for new certifications |
+| `sc.md` | Example: Solution Consultant certification (Support Suite + AI Agents Essentials) |
 
-## How It Works
+## How to Use
 
-1. A candidate records a pre-sales demo video targeting a specific certification level (Specialist or Expert).
-2. The video is submitted alongside the appropriate prompt template.
-3. An AI evaluator scores the submission across weighted topics using a 1–5 scale.
-4. A final weighted score determines the grade and verdict (Approved / Requires Human Review / Fail).
+### Using the Template
+
+1. Copy `template.md` to create a new validation prompt for your certification.
+2. Fill in the **Evaluation Scope** section with the target audience, expected duration, and required products.
+3. Define any **Product-Specific Module** topics relevant to the certification (e.g., AI Agents Essentials pass/fail check).
+4. Add **Demo Crimes / Common Issues** specific to the product area if needed.
+5. Set the **Critical Fail Conditions** that apply to your certification.
+6. Save the file with a descriptive name (e.g., `wfm.md` for Workforce Management).
+
+### Running an Evaluation
+
+1. Open your AI tool (e.g., ChatGPT, Claude) and paste the certification-specific prompt.
+2. Upload or reference the candidate's video submission.
+3. Specify the evaluation mode: **Specialist** (friendly) or **Expert** (strict).
+4. The AI will return a scored evaluation table, weighted calculation, final grade, verdict, and feedback.
+
+### Example: `sc.md`
+
+The `sc.md` file is a ready-to-use example built from the base template. It targets the **Solution Consultant** certification and requires candidates to demonstrate:
+- Zendesk Support Suite
+- AI Agents Essentials
+
+Use it as a reference for how to adapt `template.md` to a specific certification, including how to define mandatory product checks, demo crimes, and critical fail conditions.
 
 ## Evaluation Topics
 
